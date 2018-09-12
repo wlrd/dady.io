@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>dadify your text</title>
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+text to dadify: <input type="text" id="myText" value="" size="40">
+
+<button onclick="myFunction()">dadify</button>
+<p id = "yo">
+
+<script>
+function myFunction() {
+    var a = document.getElementById("myText").value;
+    document.getElementById("yo").textContent = 
+      a.split('').filter((c, i) => c != a[i+1]).join('');
+}
+</script>
+
+</body>
+</html>
