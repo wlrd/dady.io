@@ -5,6 +5,7 @@ function rank(){
     });
 
     addDonations(donations)
+    addTotal(donations)
 }
 
 function addDonations(donations){
@@ -18,6 +19,12 @@ function addDonations(donations){
     tbody.appendChild(tr);
     rankings.appendChild(tbody);
   }
+}
+
+function addTotal(donations){
+  var total = document.getElementById("total");
+  total.appendChild(document.createTextNode("total raised thru dady.io $" + 
+    donations.map(_ => _.amount).reduce((a,b) => a + b, 0)))
 }
 
 function createRow(tr, e){
