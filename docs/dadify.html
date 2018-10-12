@@ -8,7 +8,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 text to dadify: <input type="text" id="myText" value="" size="40">
 
-<button onclick="myFunction()">dadify</button>
+<button id = "butonaf" onclick="myFunction()">dadify</button>
 <p id = "yo">
 
 <script>
@@ -17,6 +17,12 @@ function myFunction() {
     document.getElementById("yo").textContent = 
       a.split('').filter((c, i) => c != a[i+1]).join('');
 }
+
+window.addEventListener("keyup", function(){
+    if (event.keyCode === 13) {
+      document.getElementById("butonaf").click();
+    }
+});
 </script>
 
 </body>
