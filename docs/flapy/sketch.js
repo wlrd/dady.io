@@ -66,7 +66,7 @@ class Dady {
 
         this.jump = function () {
             if(this.alive){
-                this.velocityY -= 7
+                this.velocityY -= 5
             }
         }
 
