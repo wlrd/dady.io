@@ -114,12 +114,8 @@ class Pipe {
         }
 
         this.gg = function(dady){
-            if(dady.y < this.top || dady.y > height - this.bottom){
-                if(dady.x > this.x && dady.x < this.x + 25){
-                    return true
-                }
-            }
-            return false
+            return (dady.y < this.top || dady.y > height - this.bottom - 20) && 
+                ((dady.x > this.x && dady.x < this.x + 25))
         }
     }
 }
