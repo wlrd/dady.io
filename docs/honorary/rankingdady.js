@@ -1,5 +1,5 @@
 function rank(){
-    var donations = JSON.parse(data)
+    var donations = data
     donations.sort(function(a,b){
         return a.amount < b.amount;
     });

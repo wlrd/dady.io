@@ -1,4 +1,4 @@
-var data = `[
+var data = [
     {
         "name": "rafey",
         "amount" : 100,
@@ -11,4 +11,4 @@ var data = `[
         "causeLink" : "https://www.fredhutch.org/",
         "causeName" : "fred hutch"
     }
-]`;
+];
