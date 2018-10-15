@@ -1,7 +1,9 @@
 function rank(){
     var donations = data
     donations.sort(function(a,b){
-        return a.amount < b.amount;
+        if(a.amount > b.amount) return -1;
+        if (a.amount < b.amount) return 1;
+        return 0;
     });
 
     addDonations(donations)
