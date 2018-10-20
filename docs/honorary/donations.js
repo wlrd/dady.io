@@ -16,5 +16,11 @@ var data = [
         "amount" : 50,
         "causeLink" : "https://www.changethestory.org/",
         "causeName" : "united way of kalamazoo"
+    },
+    {
+        "name": "tong",
+        "amount" : 200,
+        "causeLink" : "https://concussionfoundation.org/",
+        "causeName" : "concussion legacy foundation"
     }
 ];
